@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mimari Sembol Arşivi</title>
+
+<script type="module"
+src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Inter,sans-serif;
+background:#f3f5f7;
+color:#333;
+
+}
+
+header{
+
+background:white;
+padding:30px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+header h1{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+header p{
+
+color:#666;
+
+}
+
+.container{
+
+max-width:1500px;
+margin:auto;
+padding:40px;
+
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:35px;
+
+}
+
+.viewer{
+
+background:white;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+padding:20px;
+
+}
+
+model-viewer{
+
+width:100%;
+height:720px;
+
+background:#ececec;
+
+border-radius:12px;
+
+}
+
+.info{
+
+background:white;
+
+border-radius:18px;
+
+padding:35px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.info h2{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+}
+
+.info h3{
+
+margin-top:30px;
+
+margin-bottom:8px;
+
+font-size:18px;
+
+color:#444;
+
+}
+
+.info p{
+
+line-height:1.7;
+
+margin-bottom:12px;
+
+}
+
+.info table{
+
+width:100%;
+border-collapse:collapse;
+
+margin-top:20px;
+
+}
+
+.info td{
+
+padding:10px;
+border-bottom:1px solid #eee;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+color:#777;
+
+font-size:14px;
+
+}
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+model-viewer{
+
+height:500px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Kubadabad Sarayı</h1>
+
+<p>
+Çift Başlı Kartal Kabartması – Dijital 3B Belgeleme
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="viewer">
+
+<model-viewer
+
+src="2.glb"
+
+camera-controls
+
+auto-rotate
+
+shadow-intensity="1"
+
+environment-image="neutral"
+
+exposure="1"
+
+interaction-prompt="auto"
+
+loading="eager"
+
+ar>
+
+</model-viewer>
+
+</div>
+
+<div class="info">
+
+<h2>Çift Başlı Kartal</h2>
+
+<p>
+
+Bu çalışma, mimari yapı üzerindeki sembollerin
+üç boyutlu olarak belgelenmesini ve dijital ortamda
+incelenmesini amaçlamaktadır.
+
+</p>
+
+<h3>Yapı</h3>
+
+<p>Kubadabad Sarayı</p>
+
+<h3>Tarih</h3>
+
+<p>13. yüzyıl</p>
+
+<h3>Malzeme</h3>
+
+<p>Taş Kabartma</p>
+
+<h3>Bulunduğu Yer</h3>
+
+<p>Konya / Beyşehir</p>
+
+<h3>Sembolün Yorumu</h3>
+
+<p>
+
+Çift başlı kartal,
+Anadolu Selçuklu sanatında
+güç, hâkimiyet ve koruyuculuğu temsil eden
+önemli sembollerden biridir.
+
+</p>
+
+<h3>Kaynakça</h3>
+
+<p>
+
+Belkıs Doğan,
+Anadolu Selçuklu Mimarisinde Semboller.
+
+</p>
+
+<table>
+
+<tr>
+
+<td><strong>Tarama Yöntemi</strong></td>
+
+<td>Fotogrametri</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Model Formatı</strong></td>
+
+<td>GLB</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Çözünürlük</strong></td>
+
+<td>2048 Texture</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Dijital Mimari Sembol Arşivi
+
+</footer>
+
+</body>
+</html>
